@@ -1,4 +1,5 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import IMGMobile from "../images/mobile.jpg";
 import IMGDesktop from "../images/desktop.jpg";
 
@@ -32,7 +33,7 @@ const ProductCard = () => {
                 </Row>
                 <div className="d-grid">
                   <Button className="btn-custom" size="lg">
-                    Add to Cart
+                    <AiOutlineShoppingCart /> Add to Cart
                   </Button>
                 </div>
               </Card.Body>
