@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --DarkcyanHover: hsl(158, 36%, 27%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  /* font-family: "Fraunces", serif; */
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  max-width: 375px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 767px) {
+  .rounded-my {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
   }
-  to {
-    transform: rotate(360deg);
+  .rounded-my {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
   }
+}
+
+.card-subtitle,
+.card-text,
+.past {
+  color: var(--Darkgrayishblue);
+}
+
+.card-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.card-title {
+  font-family: "Fraunces", serif;
+  color: var(--Verydarkblue);
+}
+
+.present {
+  color: var(--Darkcyan);
+}
+
+.past {
+  text-decoration: line-through;
+}
+
+.btn-custom {
+  background-color: var(--Darkcyan);
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: var(--DarkcyanHover);
 }
