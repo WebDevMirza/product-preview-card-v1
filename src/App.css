@@ -9,8 +9,8 @@
 }
 
 body {
-  /* font-family: "Fraunces", serif; */
   font-family: "Montserrat", sans-serif;
+  background: var(--Cream);
 }
 
 .container {
@@ -37,7 +37,7 @@ body {
 
 .card-subtitle,
 .card-text,
-.past {
+.sr-only {
   color: var(--Darkgrayishblue);
 }
 
@@ -46,8 +46,12 @@ body {
   letter-spacing: 3px;
 }
 
-.card-title {
+.card-title,
+.price {
   font-family: "Fraunces", serif;
+}
+
+.card-title {
   color: var(--Verydarkblue);
 }
 

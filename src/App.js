@@ -3,9 +3,9 @@ import ProductCard from "./compo/ProductCard";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <ProductCard />
-    </div>
+    </main>
   );
 }
 
